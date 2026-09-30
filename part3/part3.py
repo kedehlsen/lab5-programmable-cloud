@@ -7,7 +7,7 @@ from google.oauth2 import service_account
 
 
 PROJECT = os.getenv("GOOGLE_CLOUD_PROJECT", "lab-5-510203")
-ZONE = "us-east1-d"
+ZONE = "us-west1-b"
 VM1_NAME = "lab5-vm1"
 
 
