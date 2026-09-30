@@ -289,7 +289,7 @@ def create_snapshot(project_id, zone, instance_name):
     return snap_name
 
 
-zone = 'us-east1-d'
+zone = 'us-west1-b'
 snap = create_snapshot(project, zone, "lab5-vm")
 
 results = []
