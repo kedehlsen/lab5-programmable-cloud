@@ -275,7 +275,7 @@ def set_network_tag(project_id, zone, instance_name, tag="allow-5000"):
     wait_for_extended_operation(op, "setting tags")
 
 #defines the variables to pass in to the vm instance creation
-zone = 'us-east1-d'
+zone = 'us-west1-b'
 image = get_image_from_family("ubuntu-os-cloud", "ubuntu-2204-lts")
 boot_disk = disk_from_image(
     disk_type=f"zones/{zone}/diskTypes/pd-standard",
@@ -367,5 +367,5 @@ if "allow-5000" not in existing:
 print(f"\nThe Flask application is available at:\n\nhttp://{ip}:5000")
 
 print("Your running instances are:")
-for instance in list_instances(project, 'us-east1-d'):
+for instance in list_instances(project, 'us-west1-b'):
     print(instance.name)
